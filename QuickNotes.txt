@@ -1,28 +1,17 @@
 AD Tidbits
-
+# Provder
 # Don't load AD Drive - Cmdlets Only
 $env:adps_loaddefaultdrive = 0
-
 # Load AD Drive with easier to use syntax
 Remove-PSDrive AD
 New-PSDrive -Name AD -Root "" -PSProvider ActiveDirectory -FormatType Canonical
+# Demo customized Get-ADUser
+
 Use Search-ADAccount for accountDisabled, inactive, expiring, lockedout, passwd expired
 
 
 
-Change Control
 
-Why
-
-1) Want access to all my scripts/code on any machine
-2) Want latest updates available to multiple machines
-3) Want to be able to update code without fear of not being able to roll back changes
-
-
-1) Build a repository - where I am going to keep code I want to share
-2) Update code - push update to local repository - push to "cloud" respository
-3) Pull down code to different location\different machine
-4) Make changes and roll back to prior change (99% of the time, go to last checkin)
 
 Create a Repository - Using Windows Tools from GitHub.com - Initially - do not push to GitHub.com
 Create file(s) in repo that you want to track (Demonstrate-ChangeControl.ps1 and demofile.txt)
