@@ -1,0 +1,24 @@
+-- Add all files in repository
+git add *
+-- commit all files to repository
+git commit *
+-- create a tag (like a TFS Label)
+git tag -a V1.0 
+-- Show log one checkout per line with detailed info
+git log --decorate --oneline
+-- Create a branch and do a checkout
+git branch BasedOnV.1Tag v1.0
+git checkout BasedOnV.1Tag
+-- go back to master branch and merge
+git checkout master
+git merge BasedOnV.1Tag
+
+
+# how to add an alias
+git config --global alias.andylog "log --oneline --decorate"
+
+# how to rename a branc
+git branch --m oldbranchname newbranchname # Rename a branch
+
+# shows everything. You can use this to recover 
+git reflog #  
