@@ -22,3 +22,21 @@ git branch --m oldbranchname newbranchname # Rename a branch
 
 # shows everything. You can use this to recover 
 git reflog #  
+
+
+# References and Resources
+
+Try Git
+http://try.github.io/levels/1/challenges/1
+
+Git for 4 yrs and up 
+http://2010.osdc.com.au/proposal/196/git-ages-4-and
+
+Github
+http://www.github.com
+
+Bitbucket
+http://bitbucket.org
+
+TFS in the Cloud
+http://tfs.visualstudio.com 
